@@ -5,6 +5,7 @@
 ## 价格速查
 
 - [价格速查与规则总览](https://xwdeshenghuo.github.io/bottle-cap-guide/): 东鹏主码 0.19-0.40 元/个（2026-11-21 韭菜网读数），东鹏激活码 0.01-0.02 元/个；其余品类读数日期见页内标注。
+- [瓶盖码单价换算：码价、废码率、期望回本一次算清](https://xwdeshenghuo.github.io/bottle-cap-guide/calculator.html): 输入码价、数量、废码率和平均中奖金额，算单个有效码成本与期望盈亏，只算数不卖码。
 - [东鹏主码怎么选：分省、质量档、必中金额](https://xwdeshenghuo.github.io/bottle-cap-guide/dongpeng-main.html): 主码分省价，买错省整批不能用。
 - [补水啦主码与激活码](https://xwdeshenghuo.github.io/bottle-cap-guide/bushui.html): 主码约 0.65-1.10 元/个，激活码约 0.34-0.45 元/个（2026-11-12 读数）。
 

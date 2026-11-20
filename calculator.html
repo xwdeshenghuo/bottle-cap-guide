@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>瓶盖码单价换算：码价、废码率、期望回本一次算清</title>
+<meta name="description" content="输入码价、数量、废码率和平均中奖金额，算出单个有效码成本与期望盈亏。只算数，不卖码、不代扫。价格口径见瓶盖码价格与规则指南。">
+<style>body{font-family:system-ui,-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;max-width:720px;margin:0 auto;padding:24px 16px;line-height:1.8;color:#222}h1{font-size:22px}h2{font-size:18px;margin-top:28px}a{color:#1657c9}.note{color:#666;font-size:14px}.warn{background:#fff7e6;border:1px solid #f0c36d;padding:12px 14px;font-size:14px}label{display:block;margin:12px 0 4px}input,select{width:100%;padding:10px;font-size:16px;box-sizing:border-box}button{margin-top:16px;padding:12px 20px;font-size:16px;background:#1657c9;color:#fff;border:0;border-radius:6px}table{border-collapse:collapse;width:100%;font-size:15px;margin-top:16px}td,th{border:1px solid #ddd;padding:8px;text-align:left}ul{padding-left:20px}</style>
+</head>
+<body>
+<p class="note"><a href="index.html">瓶盖码价格与规则指南</a> &gt; 单价换算</p>
+<h1>瓶盖码单价换算</h1>
+<p>只算数，不卖码、不代扫。废码率按质量档来：无废约 0%，98 档约 2%，90 档约 10%，75 档约 25%，60 档约 40%，各店标注略有出入，以商品页为准。</p>
+<label>码价（元/个）<input id="price" type="number" step="0.01" min="0" value="0.70"></label>
+<label>数量（个）<input id="qty" type="number" step="1" min="1" value="100"></label>
+<label>废码率（%）<input id="waste" type="number" step="1" min="0" max="100" value="25"></label>
+<label>平均中奖金额（元/有效码，没有实测就填 0）<input id="win" type="number" step="0.01" min="0" value="0"></label>
+<button onclick="calc()">算一下</button>
+<table id="out" style="display:none">
+<tr><th>项目</th><th>结果</th></tr>
+<tr><td>总成本</td><td id="rCost"></td></tr>
+<tr><td>预计有效码数</td><td id="rValid"></td></tr>
+<tr><td>单个有效码成本</td><td id="rUnit"></td></tr>
+<tr><td>期望总收入（按你填的平均中奖金额）</td><td id="rRev"></td></tr>
+<tr><td>期望盈亏</td><td id="rProfit"></td></tr>
+</table>
+<p class="note" id="tip"></p>
+<script>
+function calc(){
+  var p=parseFloat(document.getElementById('price').value)||0;
+  var q=parseFloat(document.getElementById('qty').value)||0;
+  var w=parseFloat(document.getElementById('waste').value)||0;
+  var win=parseFloat(document.getElementById('win').value)||0;
+  var cost=p*q, valid=q*(1-w/100), unit=valid>0?cost/valid:0;
+  var rev=valid*win, profit=rev-cost;
+  document.getElementById('out').style.display='';
+  document.getElementById('rCost').textContent=cost.toFixed(2)+' 元';
+  document.getElementById('rValid').textContent=valid.toFixed(0)+' 个';
+  document.getElementById('rUnit').textContent=unit.toFixed(3)+' 元/个';
+  document.getElementById('rRev').textContent=rev.toFixed(2)+' 元';
+  document.getElementById('rProfit').textContent=(profit>=0?'+':'')+profit.toFixed(2)+' 元';
+  document.getElementById('tip').textContent=win===0?'提醒：没填平均中奖金额，只能算出成本，算不出回本。平均中奖金额要按你自己的实扫记录填，不要按最高奖填。期望值是概率，不是保证，废码默认不补，见《转卖规则与风险》。':(profit>=0?'按你填的数，期望值是正的，但这只是期望值：中奖分布不均、废码率波动都会让实际结果偏离。':'按你填的数，期望值是负的，码价高于期望奖值，长期扫就是亏。');
+}
+</script>
+<h2>现成参考价（2026-11-21 韭菜网读数）</h2>
+<ul>
+<li>东鹏主码：0.19–0.40 元/个（湖北60质量约 0.19 元，上海/北京约 0.26–0.28 元，浙江约 0.40 元），旧口径 0.30–0.85 元已过期。</li>
+<li>东鹏激活码：0.01–0.02 元/个，本身不中奖，只用来激活主码中奖后的提现。</li>
+<li>补水啦主码：约 0.65–1.10 元/个；补水啦激活码：约 0.34–0.45 元/个。</li>
+</ul>
+<p class="note">本站只做公开价格与规则信息汇总，不卖码、不代扫、不提供买码链接。价格为公开比价站读数，次日可能变动，以比价站实时页为准。</p>
+</body>
+</html>
