@@ -1,0 +1,25 @@
+# 瓶盖码价格与规则指南
+
+> 只汇总公开比价站的价格与规则，不卖码、不代扫、不提供买码链接。价格为公开比价站读数，次日可能变动，以比价站实时页为准。
+
+## 价格速查
+
+- [价格速查与规则总览](https://xwdeshenghuo.github.io/bottle-cap-guide/): 东鹏主码 0.19-0.40 元/个（2026-11-21 韭菜网读数），东鹏激活码 0.01-0.02 元/个；其余品类读数日期见页内标注。
+- [东鹏主码怎么选：分省、质量档、必中金额](https://xwdeshenghuo.github.io/bottle-cap-guide/dongpeng-main.html): 主码分省价，买错省整批不能用。
+- [补水啦主码与激活码](https://xwdeshenghuo.github.io/bottle-cap-guide/bushui.html): 主码约 0.65-1.10 元/个，激活码约 0.34-0.45 元/个（2026-11-12 读数）。
+
+## 规则与风险
+
+- [转卖规则与风险](https://xwdeshenghuo.github.io/bottle-cap-guide/risks.html): 多数品牌活动规则写明兑奖权益仅限购买产品的消费者本人享有，禁止转卖。
+- [废码是什么意思](https://xwdeshenghuo.github.io/bottle-cap-guide/dead-code.html): 质量档、无废、废不补。
+- [比价站怎么用](https://xwdeshenghuo.github.io/bottle-cap-guide/comparison-sites.html): 码上比、韭菜网、盖查查、瓶盖导航的用法与同步时间提醒。
+- [常见问题](https://xwdeshenghuo.github.io/bottle-cap-guide/faq.html): 一天能扫几次、1 分钱码是真的吗。
+
+## Optional
+
+- [可乐、百事、雪碧](https://xwdeshenghuo.github.io/bottle-cap-guide/coke-pepsi.html)
+- [王老吉、毛铺、劲酒](https://xwdeshenghuo.github.io/bottle-cap-guide/wanglaoji-maipu.html)
+- [元气森林冰茶、外星人](https://xwdeshenghuo.github.io/bottle-cap-guide/yuanqi-alien.html)
+- [脉动瓶盖码](https://xwdeshenghuo.github.io/bottle-cap-guide/maidong.html)
+- [农夫山泉冰茶瓶盖码](https://xwdeshenghuo.github.io/bottle-cap-guide/nongfu-ice-tea.html)
+- [东鹏激活码](https://xwdeshenghuo.github.io/bottle-cap-guide/dongpeng-activation.html)
